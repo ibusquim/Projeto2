@@ -1,4 +1,4 @@
-function iniciarnumeroSecreto() {
+function numeroSecreto() {
 let numeroSecreto = 5;
 console.log(numeroSecreto); 
 
@@ -19,7 +19,7 @@ while (chute != numeroSecreto) {
 }
 }
 
-function iniciarjogoMedia() {
+function jogoMedia() {
     if (quantidade <= 0 || quantidade === null || quantidade === "" || typeof quantidade !== "number") {
   alert("Quantidade inválida. Tente novamente com um número maior que zero.");
 } else {
@@ -44,7 +44,7 @@ function iniciarjogoMedia() {
 }
 }
 
-function iniciarjogoSoma() {
+function jogoSoma() {
     let num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
     let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
 
