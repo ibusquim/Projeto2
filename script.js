@@ -20,7 +20,10 @@ while (chute != numeroSecreto) {
 }
 
 function jogoMedia() {
-    if (quantidade <= 0 || quantidade === null || quantidade === "" || typeof quantidade !== "number") {
+let quantidade = prompt("Quantos números você quer digitar?");
+quantidade = Number(quantidade);
+
+if (quantidade <= 0 || quantidade === null || quantidade === "" || typeof quantidade !== "number") {
   alert("Quantidade inválida. Tente novamente com um número maior que zero.");
 } else {
   let soma = 0;
@@ -31,7 +34,7 @@ function jogoMedia() {
 
     if (entrada.trim() === "" || entrada === null || isNaN(numero)) {
       alert("Valor inválido. Digite um número.");
-      i--; 
+      i--; // repetir a rodada
       continue;
     }
 
@@ -40,6 +43,7 @@ function jogoMedia() {
 
   let media = soma / quantidade;
 
+  // Aqui está o uso correto da template string com crase:
   alert(`A média calculada entre os ${quantidade} números digitados é: ${media.toFixed(2)}`);
 }
 }
